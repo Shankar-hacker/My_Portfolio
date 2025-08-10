@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 80px 0 0 0;
+            background: linear-gradient(135deg, #0c1426 0%, #1a2332 50%, #0f1419 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(12, 20, 38, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(18, 214, 64, 0.2);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .nav-brand h3 {
+            color: #12d640;
+            margin: 0;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(18, 214, 64, 0.2);
+            color: #12d640;
+        }
+        
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title h2 {
+            color: #12d640;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .profile-img-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .img-profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(18, 214, 64, 0.3);
+        }
+        
+        .content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h3>Sankar Paikira</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About</h2>
+        </div>
+        
+        <div class="profile-img-container">
+            <img src="assets/img/profile.jpg" class="img-profile" alt="Sankar Paikira">
+        </div>
+        
+        <div class="content">
+            <p>Focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for these domains came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.</p>
+            
+            <p>Dedicated college student with a passion for learning and commitment to academic excellence. Proficient in time management, collaboration, and problem-solving. Thrives in dynamic academic environments and eager to contribute skills and enthusiasm to diverse projects and opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-title">
+            <h2>Education</h2>
+        </div>
+        <div class="content">
+            <p>This is the education section content.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="content">
+            <p>This is the projects section content.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="content">
+            <p>This is the skills section content.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts">
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="content">
+            <p>This is the contact section content.</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio Test</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0c1426 0%, #1a2332 50%, #0f1419 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding-top: 80px;
+            min-height: 100vh;
+        }
+        
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(12, 20, 38, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(18, 214, 64, 0.2);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .nav-brand h3 {
+            color: #12d640;
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(18, 214, 64, 0.2);
+            color: #12d640;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title h2 {
+            color: #12d640;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+        
+        .img-profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(18, 214, 64, 0.3);
+            display: block;
+            margin: 0 auto 30px;
+        }
+        
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .resume-btn {
+            background: linear-gradient(135deg, #12d640, #15e64a);
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        
+        .resume-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(18, 214, 64, 0.4);
+        }
+        
+        .icon-box {
+            background: rgba(18, 214, 64, 0.1);
+            border: 1px solid rgba(18, 214, 64, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(18, 214, 64, 0.2);
+        }
+        
+        .icon-box i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="fixed-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="nav-brand">
+                    <h3>Sankar Paikira</h3>
+                </div>
+                <ul class="nav-links d-none d-md-flex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="assets/img/profile.jpg" class="img-profile" alt="Sankar Paikira">
+                </div>
+                <div class="col-lg-8">
+                    <div class="content">
+                        <p>Focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for these domains came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.</p>
+                        
+                        <p>Dedicated college student with a passion for learning and commitment to academic excellence. Proficient in time management, collaboration, and problem-solving. Thrives in dynamic academic environments and eager to contribute skills and enthusiasm to diverse projects and opportunities.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="bx bx-chevron-right"></i> <strong>Birthday:</strong> 28 November 2003</li>
+                                    <li><i class="bx bx-chevron-right"></i> <strong>Phone:</strong> +91 6363642271</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="bx bx-chevron-right"></i> <strong>City:</strong> Bengaluru, Madiwala</li>
+                                    <li><i class="bx bx-chevron-right"></i> <strong>Email:</strong> shankarpaikira225@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="https://goresume.io/resume/share/shrs_0cc1a732cce74326a848b0ec2c7442f0" target="_blank">
+                                <button class="resume-btn">View Resume</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interests</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="icon-box">
+                        <i class="bx bx-globe" style="color: #ffbb2c;"></i>
+                        <h5>Web Development</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="icon-box">
+                        <i class="bx bx-data" style="color: #5578ff;"></i>
+                        <h5>Machine Learning</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="icon-box">
+                        <i class="bx bx-camera" style="color: #e80368;"></i>
+                        <h5>Computer Vision</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="icon-box">
+                        <i class="bx bx-code-alt" style="color: #1c7d32;"></i>
+                        <h5>Natural Language Processing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <h5>Completed Schooling (10th grade)</h5>
+                        <p>May 2014 - April 2020</p>
+                        <ul class="text-start">
+                            <li>General concepts of Science</li>
+                            <li>Concepts of basic Mathematics</li>
+                            <li>History, Geography and Economics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <h5>Science [PCMCs] PU degree</h5>
+                        <p>July 2020 - June 2022</p>
+                        <ul class="text-start">
+                            <li>Database Management Systems</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Programming Language in C++</li>
+                            <li>Basics of Logic Gates</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box">
+                        <h5>B.E in Computer Science Engineering</h5>
+                        <p>December 2022 - Present</p>
+                        <ul class="text-start">
+                            <li>Data Structures & Algorithms</li>
+                            <li>Database Management Systems</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="icon-box">
+                        <h5>Drug Recommendation System</h5>
+                        <p>AI-powered system for drug recommendations</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="icon-box">
+                        <h5>Fanta Landing Page</h5>
+                        <p>Modern responsive landing page design</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="icon-box">
+                        <h5>TO-DO List Website</h5>
+                        <p>Interactive task management application</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="icon-box">
+                        <h5>J.A.R.V.I.S - AI Assistant</h5>
+                        <p>Voice-activated AI assistant application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="icon-box" style="background: white; color: #333;">
+                        <h5 style="color: #09203a;">Languages and Databases</h5>
+                        <p>Python, Java, HTML5, CSS3, JavaScript, MySQL, C, C++</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="icon-box" style="background: white; color: #333;">
+                        <h5 style="color: #09203a;">Frameworks</h5>
+                        <p>Flask, Django, Bootstrap, React, Scikit-learn</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="icon-box" style="background: white; color: #333;">
+                        <h5 style="color: #09203a;">Tools</h5>
+                        <p>Git, AWS, Jupyter Notebook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="icon-box">
+                        <i class="bx bx-map"></i>
+                        <h5>My Address</h5>
+                        <p>#176, Maluru Ramaiah Compound, Old Madiwala,<br>
+                        VP road, Near Sri Someshwara Shiva Temple<br>
+                        Bengaluru- 560068</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="icon-box">
+                        <i class="bx bx-envelope"></i>
+                        <h5>Email</h5>
+                        <p>shankarpaikira225@gmail.com</p>
+                        <p><strong>Phone:</strong> +91 6363642271</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <h4>Social Profiles</h4>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <a href="https://www.linkedin.com/in/sankar-paikira-1063a7259/" target="_blank" style="color: #12d640; font-size: 2rem;"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.github.com/shankar-hacker" target="_blank" style="color: #12d640; font-size: 2rem;"><i class="bx bxl-github"></i></a>
+                    <a href="mailto:shankarpaikira225@gmail.com" target="_blank" style="color: #12d640; font-size: 2rem;"><i class="bx bxl-google"></i></a>
+                    <a href="https://www.instagram.com/shankar_gojo_01000101/" target="_blank" style="color: #12d640; font-size: 2rem;"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://x.com/sha54773" target="_blank" style="color: #12d640; font-size: 2rem;"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
