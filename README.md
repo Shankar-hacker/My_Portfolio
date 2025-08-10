@@ -1,6 +1,6 @@
-# Enhanced Personal Portfolio
+# Personal Portfolio
 
-A modern, responsive portfolio website with stunning animations and interactive features, perfect for freshers to showcase their skills and projects.
+A modern, responsive portfolio website with stunning animations and interactive features, a perfect portfolio to showcase my skills and projects.
 
 ## ✨ Features
 
@@ -34,23 +34,6 @@ A modern, responsive portfolio website with stunning animations and interactive 
 - **Vanilla JavaScript**: No heavy frameworks, pure performance
 - **SEO Optimized**: Proper meta tags and semantic HTML
 - **Accessibility**: Keyboard navigation and screen reader friendly
-
-## 📁 Project Structure
-
-```
-MY_NEW_PORTFOLIO/
-├── index.html                 # Main HTML file
-├── assets/
-│   ├── css/
-│   │   └── style.css         # Enhanced styles with animations
-│   ├── js/
-│   │   ├── main.js           # Core functionality
-│   │   └── enhanced-interactions.js  # Additional interactions
-│   ├── img/                  # Images and assets
-│   └── vendor/               # Third-party libraries
-├── projects/                 # Project detail pages
-└── README.md                # This file
-```
 
 ## 🎨 Color Scheme
 
